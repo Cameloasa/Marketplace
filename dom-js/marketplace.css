@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Card styling */
+  .card {
+    margin-bottom: 20px; /* Adjust the value to set the desired padding between ads */
+    border: none; /* Remove border for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a lifted effect */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 0; /* Remove top left radius */
+    border-top-right-radius: 0; /* Remove top right radius */
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Increase font size */
+    margin-bottom: 10px; /* Add space below title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Adjust text size */
+    color: #6c757d; /* Text color */
+  }
+  
+  .card-footer {
+    background-color: #f8f9fa; /* Background color for the card footer */
+    border-top: none; /* Remove border top */
+    padding: 10px;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8; /* Custom button color */
+    border: none; /* Remove border */
+    transition: background-color 0.2s; /* Smooth transition for hover */
+  }
+  
+  .btn-info:hover {
+    background-color: #138496; /* Darker color on hover */
+  }
+  
+  /* Filter component styling */
+  #filterTitle {
+    max-width: 300px; /* Set a max width for the input */
+    margin-bottom: 20px; /* Space below the filter */
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Vertical padding */
+  }
+  
+  footer .text-danger {
+    color: #dc3545; /* Danger color for the Lexicon text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 15px; /* Reduce margin between cards on small screens */
+    }
+  
+    .card-title {
+      font-size: 1.1rem; /* Adjust title size */
+    }
+  
+    .card-text {
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  
+    #filterTitle {
+      max-width: 100%; /* Full width input on small screens */
+    }
+  }
+  
